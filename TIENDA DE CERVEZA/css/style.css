@@ -1,0 +1,330 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../image/bg-logo.jpg);
+}
+
+.encabezado {
+  color: white;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  background-color: black;
+  border: double 4px white;
+  border-radius: 2rem;
+  min-height: 100vh;
+}
+
+h3, h2, h4 {
+  font-family: "Pacifico", cursive;
+}
+
+.title-encabezado {
+  display: flex;
+  flex-direction: column;
+}
+.title-encabezado h1 {
+  padding: 10px 5px 0px 20px;
+}
+.title-encabezado small {
+  font-size: small;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-home {
+  width: 35%;
+  height: 35%;
+}
+
+.title-home {
+  width: auto;
+  font-size: 2rem;
+}
+
+/* CERVEZAS */
+.beer-container {
+  display: grid;
+  margin: 10%;
+  padding: 40px;
+  background-color: black;
+  border: double 4px wheat;
+  border-radius: 2rem;
+  grid-template-columns: repeat(4);
+  grid-template-rows: repeat(4);
+  gap: 1rem 2rem;
+  justify-content: space-around;
+  font-size: medium;
+  grid-template-areas: "title-cerveza-1 title-cerveza-1 title-cerveza-2 title-cerveza-2" "cerveza-1 parrafo-1  cerveza-2 parrafo-2" "title-cerveza-3 title-cerveza-3 title-cerveza-4 title-cerveza-4" "cerveza-3 parrafo-3 cerveza-4 parrafo-4 ";
+}
+
+.title {
+  grid-area: title;
+  margin-top: 10%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: double 2px wheat;
+  background-color: black;
+  color: wheat;
+  text-align: center;
+}
+
+.title-cerveza-1 {
+  grid-area: title-cerveza-1;
+  border-radius: 1rem;
+  border: double 2px wheat;
+  color: wheat;
+  text-align: center;
+}
+
+.title-cerveza-2 {
+  grid-area: title-cerveza-2;
+  border-radius: 1rem;
+  border: double 2px wheat;
+  color: wheat;
+  text-align: center;
+}
+
+.title-cerveza-3 {
+  grid-area: title-cerveza-3;
+  border-radius: 1rem;
+  border: double 2px wheat;
+  color: wheat;
+  text-align: center;
+}
+
+.title-cerveza-4 {
+  grid-area: title-cerveza-4;
+  border-radius: 1rem;
+  border: double 2px wheat;
+  color: wheat;
+  text-align: center;
+}
+
+.cerveza-1 {
+  grid-area: cerveza-1;
+}
+
+.cerveza-2 {
+  grid-area: cerveza-2;
+}
+
+.cerveza-3 {
+  grid-area: cerveza-3;
+}
+
+.cerveza-4 {
+  grid-area: cerveza-4;
+}
+
+.descripcion-1 {
+  grid-area: parrafo-1;
+  color: wheat;
+}
+
+.descripcion-2 {
+  grid-area: parrafo-2;
+  color: wheat;
+}
+
+.descripcion-3 {
+  grid-area: parrafo-3;
+  color: wheat;
+}
+
+.descripcion-4 {
+  grid-area: parrafo-4;
+  color: wheat;
+}
+
+.img-grid {
+  width: 150px;
+  height: 200px;
+  border-radius: 1rem;
+  border: double 2px wheat;
+}
+
+/* ELABORACION */
+.elaboracion-1 {
+  display: grid;
+  background-color: black;
+  margin: 2rem 0.1rem 2rem 0.1rem;
+  padding: 20px;
+  color: wheat;
+  border: double 2px wheat;
+  border-radius: 2rem;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+  grid-template-areas: "img-elaboracion-1 title-elaboracion-1" "img-elaboracion-1 descripcion-elaboracion-1";
+}
+
+.title-elaboracion-1 {
+  grid-area: title-elaboracion-1;
+  color: wheat;
+  text-align: center;
+}
+
+.img-elaboracion-1 {
+  grid-area: img-elaboracion-1;
+}
+
+.descripcion-elaboracion-1 {
+  grid-area: descripcion-elaboracion-1;
+  padding: 20px;
+}
+
+.elaboracion-2 {
+  display: grid;
+  background-color: black;
+  margin: 2rem 0.1rem 2rem 0.1rem;
+  padding: 20px;
+  color: wheat;
+  border: double 2px wheat;
+  border-radius: 2rem;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+  grid-template-areas: "title-elaboracion-2 img-elaboracion-2" "descripcion-elaboracion-2 img-elaboracion-2";
+}
+
+.title-elaboracion-2 {
+  grid-area: title-elaboracion-2;
+  color: wheat;
+  text-align: center;
+}
+
+.img-elaboracion-2 {
+  grid-area: img-elaboracion-2;
+}
+
+.descripcion-elaboracion-2 {
+  grid-area: descripcion-elaboracion-2;
+  padding: 20px;
+}
+
+.elaboracion-3 {
+  display: grid;
+  background-color: black;
+  margin: 2rem 0.1rem 2rem 0.1rem;
+  padding: 20px;
+  color: wheat;
+  border: double 2px wheat;
+  border-radius: 2rem;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+  grid-template-areas: "img-elaboracion-3 title-elaboracion-3" "img-elaboracion-3 descripcion-elaboracion-3";
+}
+
+.title-elaboracion-3 {
+  grid-area: title-elaboracion-3;
+  color: wheat;
+  text-align: center;
+}
+
+.img-elaboracion-3 {
+  grid-area: img-elaboracion-3;
+}
+
+.descripcion-elaboracion-3 {
+  grid-area: descripcion-elaboracion-3;
+  padding: 20px;
+}
+
+.img-grid-2 {
+  width: 250px;
+  height: 300px;
+}
+
+.nosotros {
+  display: grid;
+  background-color: black;
+  margin: 2rem 0.1rem 2rem 0.1rem;
+  padding: 20px;
+  color: wheat;
+  border: double 2px wheat;
+  border-radius: 2rem;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+  grid-template-areas: "descripcion-nosotros img-nosotros";
+}
+
+.descripcion-nosotros {
+  grid-area: descripcion-nosotros;
+  padding: 2rem;
+}
+
+.img-nosotros {
+  grid-area: img-nosotros;
+  padding: 2rem;
+}
+
+.contacto-container {
+  display: flex;
+  background-color: black;
+  color: wheat;
+  border-top: double 4px wheat;
+  padding: 3rem;
+  min-height: 100%;
+  justify-content: space-around;
+}
+
+.img-icon-social {
+  height: 2rem;
+  width: 2rem;
+  padding: 2px;
+}
+
+/* TIENDA */
+.head-shop {
+  z-index: 100;
+}
+
+.description {
+  height: 25px;
+  overflow: hidden;
+  transition: height 0.3s ease-in 0.3s;
+}
+
+.description:hover {
+  height: 90px;
+}
+
+.carrito2 {
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table__productos {
+  display: flex;
+}
+
+.img_carrito {
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.table__cantidad input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.alert {
+  z-index: 100;
+}
+
+.hide, .remove {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
